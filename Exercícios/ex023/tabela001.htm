@@ -10,18 +10,17 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       table {
+        height: 400px;
         width: 400px;
         border-collapse: collapse;
       }
-      tr.linha {
-        background-color: gray;
-      }
       td {
         border: 1px solid black;
-        padding: 8px;
+        text-align: center; /*ALINHAMENTO HORIZONTAL*/
+        vertical-align: middle; /*ALINHAMENRO VERTICAL*/
       }
-      td.dado {
-        background-color: green;
+      .numero {
+        text-align: right;
       }
     </style>
   </head>
@@ -36,7 +35,7 @@
     <table>
       <tr>
         <!--primeira linha-->
-        <td class="dado">A1</td>
+        <td>A1</td>
         <td>B1</td>
         <td>C1</td>
       </tr>
@@ -44,13 +43,13 @@
         <!--segunda linha-->
         <td>A2</td>
         <td>B2</td>
-        <td>C2</td>
+        <td class="numero">C2</td>
       </tr>
-      <tr class="linha">
+      <tr>
         <!--terceita linha-->
         <td>A3</td>
         <td>B3</td>
-        <td>C3</td>
+        <td class="numero">C3</td>
       </tr>
       <tr>
         <!-- quarta linha -->
